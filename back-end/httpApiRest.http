@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/users
+
+###
+DELETE http://localhost:3000/api/users/RubenC
+
+###
+
+PUT  http://localhost:3000/api/users/RubenC
+Content-Type: application/json
+
+ {
+        "products": [
+            "5ecf796e22d1ab46a0dc847d",
+            "5ecf7ad122d1ab46a0dc847e"
+        ],
+        "_id": "5ed0c7bee2376e105c8d6667",
+        "name": "Ruben Cardozo",
+        "email": "rubenc@gmail.com",
+        "password": "r1234",
+        "username": "RubenC",
+        "createdAt": "2020-05-29T08:28:46.065Z",
+        "__v": 0
+    }
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Bruce Wayne",
+    "email": "wayne@gmail.com",
+    "password": "bw1234",
+    "username": "BruceW"
+}
